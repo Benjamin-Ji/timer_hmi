@@ -17,6 +17,15 @@ public:
 
 private:
     Ui::title_panel_widget *ui;
+
+
+public slots:
+    void timer_updata(void);
+
+
+
+
+
 };
 
 #endif // TITLE_PANEL_WIDGET_H

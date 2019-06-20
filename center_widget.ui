@@ -1,21 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <author/>
- <comment/>
- <exportmacro/>
  <class>center_widget</class>
  <widget class="QWidget" name="center_widget">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>839</width>
+    <height>517</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="horizontalSpacing">
+    <number>6</number>
+   </property>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <widget class="QWidget" name="page"/>
+       <widget class="QWidget" name="page_2"/>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pb1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb7">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb8">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
- <pixmapfunction/>
- <connections/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pb1</sender>
+   <signal>clicked()</signal>
+   <receiver>center_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>816</x>
+     <y>37</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1052</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb2</sender>
+   <signal>clicked()</signal>
+   <receiver>center_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>801</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>906</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb3</sender>
+   <signal>clicked()</signal>
+   <receiver>center_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>810</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>916</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb4</sender>
+   <signal>clicked()</signal>
+   <receiver>center_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>805</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>948</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb5</sender>
+   <signal>clicked()</signal>
+   <receiver>center_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>805</x>
+     <y>288</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>982</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb6</sender>
+   <signal>clicked()</signal>
+   <receiver>center_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>799</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>944</x>
+     <y>401</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb7</sender>
+   <signal>clicked()</signal>
+   <receiver>center_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>792</x>
+     <y>404</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>921</x>
+     <y>440</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb8</sender>
+   <signal>clicked()</signal>
+   <receiver>center_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>788</x>
+     <y>471</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>980</x>
+     <y>466</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>set_current_widget()</slot>
+ </slots>
 </ui>

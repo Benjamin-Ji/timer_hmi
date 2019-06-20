@@ -1,20 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>main_widget</class>
- <widget class="QWidget" name="main_widget" >
-  <property name="geometry" >
+ <widget class="QWidget" name="main_widget">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>1024</width>
+    <height>768</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>BlankCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
    <string>main_widget</string>
   </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>3</number>
+   </property>
+   <property name="topMargin">
+    <number>3</number>
+   </property>
+   <property name="rightMargin">
+    <number>3</number>
+   </property>
+   <property name="bottomMargin">
+    <number>3</number>
+   </property>
+   <property name="spacing">
+    <number>3</number>
+   </property>
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,7,1">
+     <property name="spacing">
+      <number>1</number>
+     </property>
+     <item>
+      <widget class="title_panel_widget" name="widget_title" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>80</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="indicator_light_widget" name="widget_indicator" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>660</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget_center">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <widget class="QWidget" name="stackedWidget_centerPage1"/>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pb_sys_info">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>78</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>系统信息</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_ext_src">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>78</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>外部源</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_inner_src">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>78</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>内部源</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_net_state">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>78</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>网络状态</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>78</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>78</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_param_set">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>78</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>参数设置</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_help">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>78</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>帮助</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>indicator_light_widget</class>
+   <extends>QWidget</extends>
+   <header location="global">indicator_light_widget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>title_panel_widget</class>
+   <extends>QWidget</extends>
+   <header>title_panel_widget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pb_sys_info</sender>
+   <signal>clicked()</signal>
+   <receiver>main_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>724</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>73</x>
+     <y>783</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_ext_src</sender>
+   <signal>clicked()</signal>
+   <receiver>main_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>737</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>798</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_inner_src</sender>
+   <signal>clicked()</signal>
+   <receiver>main_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>741</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>800</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_net_state</sender>
+   <signal>clicked()</signal>
+   <receiver>main_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>471</x>
+     <y>745</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>460</x>
+     <y>839</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>main_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>587</x>
+     <y>731</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>853</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>main_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>736</x>
+     <y>727</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>714</x>
+     <y>805</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_param_set</sender>
+   <signal>clicked()</signal>
+   <receiver>main_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>837</x>
+     <y>728</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>832</x>
+     <y>873</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_help</sender>
+   <signal>clicked()</signal>
+   <receiver>main_widget</receiver>
+   <slot>set_current_widget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>956</x>
+     <y>730</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>953</x>
+     <y>888</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>set_current_widget()</slot>
+ </slots>
 </ui>

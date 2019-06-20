@@ -1,1 +1,7 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>pixmap/indicator_backgroubd.png</file>
+        <file>pixmap/light_green.png</file>
+        <file>pixmap/light_red.png</file>
+    </qresource>
+</RCC>
